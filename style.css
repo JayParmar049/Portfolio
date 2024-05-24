@@ -1,0 +1,187 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img.hero {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+    margin-right: 15px;
+}
+
+header .logo h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header .nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-bar ul li {
+    margin-left: 30px;
+}
+
+header .nav-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .nav-bar ul li a:hover, 
+header .nav-bar ul li a#activeTab {
+    color: #ff6347;
+}
+
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container .text h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #333333;
+}
+
+.container .text h1.h1-underline {
+    border-bottom: 4px solid #ff6347;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.container .text h2 {
+    font-size: 2em;
+    color: #666666;
+    margin: 20px 0;
+}
+
+.container .text h2 .h2-span {
+    color: #ff6347;
+}
+
+.container .about-me {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .about-me .bold-span {
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer .socials a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+    color: #ff6347;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-bar ul {
+        flex-direction: column;
+    }
+
+    header .nav-bar ul li {
+        margin: 10px 0;
+    }
+
+    .container .about-me {
+        text-align: center;
+    }
+}
+
+/* Existing styles */
+/* Add the following styles for the highlighted section */
+
+.highlighted-section {
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    flex: 1;
+    padding-left: 2rem;
+
+  }
+  
+  .right h3 {
+    margin-top: 0; 
+    font-size: 40px;
+    text-decoration:underline ;
+  }
+  
+  .hero-img{
+    height: 300px;
+    margin-left: 8.5rem;
+  }
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .highlighted-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .right {
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+  }
