@@ -138,8 +138,6 @@ header .nav-bar ul li a#activeTab {
     }
 }
 
-/* Existing styles */
-/* Add the following styles for the highlighted section */
 
 .highlighted-section {
     background-color: beige;
@@ -166,14 +164,16 @@ header .nav-bar ul li a#activeTab {
   .right h3 {
     margin-top: 0; 
     font-size: 40px;
-    text-decoration:underline ;
   }
-  
+  .right h3:hover{
+    color: rgb(66, 38, 1);
+  text-decoration: underline ;
+  }
   .hero-img{
     height: 300px;
     margin-left: 8.5rem;
   }
-  /* Adjustments for smaller screens */
+
   @media screen and (max-width: 768px) {
     .highlighted-section {
       flex-direction: column;
@@ -185,3 +185,65 @@ header .nav-bar ul li a#activeTab {
       margin-top: 1rem;
     }
   }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    flex: 1;
+}
+
+.project {
+    background-color: beige;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img.hero-img {
+    width: 50%;
+    height: auto;
+    margin-left: 1rem;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.project h3:hover{
+    color: rgb(66, 38, 1);
+  text-decoration: underline ;
+}
+
+.project p {
+    font-size: 1em;
+    color: #666666;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer .socials a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+    color: #ff6347;
+}
