@@ -247,3 +247,66 @@ header .nav-bar ul li a#activeTab {
 .footer .socials a:hover {
     color: #ff6347;
 }
+
+.contact-container {
+    background-color: beige;
+    margin-left: 22rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333333;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.contact-info li a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.contact-info li a:hover {
+    color: #ff6347;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer .socials a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+    color: #ff6347;
+}
