@@ -39,7 +39,7 @@
                     <a href="https://www.instagram.com/jayparmar2205" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
                 </li>
                 <li>
-                    <i class="fas fa-phone-alt"></i> +123 456 7890
+                    <i class="fas fa-phone-alt"></i> +91 99241 76200
                 </li>
                 <li>
                     <a href="https://twitter.com/jayparmar2205" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
@@ -52,6 +52,16 @@
                 </li>
             </ul>
         </div>
+        <div class="contact-form">
+            <form id="contactForm" method="">
+                <label for="Fname" id="Fname-label">First Name</label>
+                <input type="text" id="Fname" name="Fname" placeholder="Enter your first name">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Enter your Email">
+                <label for="Query">Query</label>
+                <input type="text" id="Query" name="Query" placeholder="Enter your Query">
+                <input type="submit" value="Submit">
+            </form>
     </main>
 
     <footer class="footer">
@@ -61,5 +71,12 @@
             <a href="https://www.linkedin.com/in/jay-parmar-598a03244"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your submission!');
+        });
+    </script>
 </body>
 </html>
